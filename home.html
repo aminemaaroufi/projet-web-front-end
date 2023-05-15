@@ -1,0 +1,268 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                background-color: bisque;
+                font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
+                border: 2px solid black;
+                margin: 9px;
+            }
+            body {font-family: Arial, Helvetica, sans-serif;}
+            .topnav {
+                overflow: hidden;
+                background-color: bisque;
+            }
+            .topnav a {
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active {
+                background-color: black;
+                color: white;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            div.login{
+                text-align: center;
+                
+            }
+            button {
+                background-color: bisque;
+                color: black;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: 2px solid black;
+                cursor: pointer;
+                width: 25%;
+                opacity: 0.9;
+}
+
+
+.btn {
+   padding-left: 50%;
+   padding-right: 50%;
+   border: 2px solid black;
+   
+    
+}
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: bisque;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: bisque;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 2px solid black;
+  width: 90%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.parag{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.fa{
+    padding-left: 10px;
+    
+    
+}
+
+
+        </style>
+
+    </head>
+    <body>
+        <main>
+            <div class="topnav">
+                <a href="#home" class="active">Home</a>
+                <a href="creat account.html">Sign up</a>
+                <a href="#about">Our story</a>
+                <a href="#local">Localisation</a>
+                <a href="#contact" >Contact us</a>
+                
+            </div>
+
+            <div>
+                <img src="SHAGHF-BLACK-PNG-200x300-removebg-preview.png" alt="logo" style="width:20%;">
+            </div>
+            
+            <div class="login" >
+                <h4> <b>To start please creat an account by clicking the button below </b> </h4>
+                <a href="creat account.html" target="_blank"><button type="button">Sign up</button></a>
+                <h4> <b>Already a member? </b> </h4>
+                <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+            </div>
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Login</h1>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn">Cancel</button>
+        <button type="submit" class="btn" formaction="home.html">Login</button>
+      </div>
+    </div>
+  </form>
+</div> <br>
+<img src="qahwa.png" alt="qhwa" style="width: 100%;">   
+
+<div class="parag" >
+     <br><br>
+    <h4 id="about" style="text-align: center;"><b>OUR STORY</b></h4><br>
+    <p>My story begins in Tokyo, Japan. Being raised by parents who were enthusiasts of a universal language called ‘’Esperanto”, we would travel abroad every summer to attend a “World Esperanto Congress” held in different countries. My father was the owner of a manufacturing and trading company, and together with his frequent business trips, they would take me overseas whenever possible – ultimately helping to inspire my love of multiculturalism, design, and architecture.
+
+        Through experiencing different cultures, seeing rich and poor people, happy and unhappy people, I started to wonder who I was, and asked myself what kind of life I wanted to live?
+        
+        After my high school graduation, I moved to California for college. I settled into a snug apartment in Venice Beach and indulged myself in the unique fusion of beach hippie culture. It was during my college years that my love for coffee started. In the 1990s, Starbucks began to expand throughout the country, capturing me with their new coffee culture and serene atmosphere. I spent lots of my days at the Starbucks in Venice Beach, either talking with friends or studying.
+        
+        Upon graduating from college, I started work for a trading company, which allowed me to travel overseas for business. A lot was learned from working closely with business owners around the world; I gained valuable insights as per their mindset towards work and life. And although most of them were very wealthy, I found that some were happy and others were not. This caused me to keep asking the same two questions:
+        
+        Who am I?
+        What kind of life do I want to live?
+        
+        I reflected on them over and over. Eventually, I found my answers.
+        
+        ・I want to live a simple and down-to-earth life.
+        ・I only need the basics to be satisfied: food, clothing and a house.
+        ・As my parents did for me, I also want to travel with my children and provide a higher standard of life for them.
+        
+        And my last answer was coffee.
+        
+        I truly need an amazing cup of coffee every day. This is why I founded % Shaghaf.
+        
+        So to create the best coffee possible, I borrowed money and bought a coffee farm in Hawaii. I also started trading green beans from around the world and became the sole-exporter of a Japanese roasting machine along with the distributor of one of the best espresso machines in the world. Then in September 2014, I opened the flagship store in the beautiful historic city of Kyoto, Japan.</p>
+</div>
+<br><br>
+<div class="login" id="local">
+    <h4><b> OUR LOCALISATION</b></h4>
+    <a href="https://www.google.com/maps/place/Ecole+Marocaine+des+Sciences+de+l'Ing%C3%A9nieur/@31.6534158,-8.023595,17z/data=!3m1!4b1!4m5!3m4!1s0xdafec210db584a7:0x1cb520ab88165485!8m2!3d31.6534158!4d-8.0214063?shorturl=1" target="_blank"><button type="button">Click to visit</button></a>
+   
+
+</div>
+<br><br>
+
+
+
+
+            
+            
+           
+        </main>
+        <footer>
+            <div>
+            <a href="https://www.instagram.com/groupe.emsi/" target="_blank"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+            <a href="https://www.facebook.com/emsi.ma/?locale=fr_FR" target="_blank"><i style="font-size:24px" class="fa">&#xf09a;</i></a>
+        </div>
+        </footer>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+
+        
+    </body>
+</html>
